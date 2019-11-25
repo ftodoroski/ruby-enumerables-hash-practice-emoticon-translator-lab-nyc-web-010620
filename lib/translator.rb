@@ -18,12 +18,12 @@ end
 # From American emoji to Japanese emoji
 def get_japanese_emoticon(file_path, emoticon)
   hash = load_library(file_path)
-  pp emoticon 
+  pp emoticon
 
   if hash[:get_emoticon][emoticon] == nil
     return "Sorry, that emoticon was not found"
   else
-    pp hash[:get_emoticon][emoticon]
+    hash[:get_emoticon][emoticon]
   end
 end
 
