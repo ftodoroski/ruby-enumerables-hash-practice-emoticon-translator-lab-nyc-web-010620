@@ -11,7 +11,6 @@ def load_library(file_path)
     new_hash[:get_meaning][v[1]] = k
     new_hash[:get_emoticon][v[0]] = v[1]
   end
-  pp new_hash[:get_meaning]
 
   new_hash
 end
